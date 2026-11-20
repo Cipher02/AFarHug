@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFF9F4"><meta name="color-scheme" content="light"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<title>A little comfort for Ma.</title><meta name="description" content="A small letter to read at your own pace."><meta property="og:title" content="A little comfort for Ma."><meta property="og:description" content="A small letter to read at your own pace."><meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23f0e7fa'/%3E%3Cg fill='%239475aa'%3E%3Cellipse cx='17' cy='17' rx='8' ry='9'/%3E%3Cellipse cx='30' cy='17' rx='9' ry='8'/%3E%3Cellipse cx='30' cy='30' rx='8' ry='9'/%3E%3Cellipse cx='17' cy='30' rx='9' ry='8'/%3E%3C/g%3E%3Ccircle cx='24' cy='24' r='3' fill='%23efdbac'/%3E%3C/svg%3E">
+<style>:root {
+  --ivory:#fff9f4; --lavender:#f0e7fa; --lilac:#c6afe0; --plum:#482653; --violet:#78519a;
+  --ink:#493842; --muted:#715d70; --line:#dfd1dc; --paper:#fffdf7; --gold:#b89768;
+  --serif:'Iowan Old Style','Palatino Linotype','Book Antiqua',Palatino,Georgia,serif;
+  --body:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  --hand:'Bradley Hand','Segoe Print','URW Chancery L',Georgia,serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{color-scheme:light;-webkit-text-size-adjust:100%;scroll-padding-block-start:24px}
+body{margin:0;background:var(--ivory);color:var(--ink);font:1.0625rem/1.75 var(--body);-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+body.lock-scroll{overflow:hidden}
+[hidden]{display:none!important}
+img,svg{display:block;max-width:100%}
+.definitions{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
+button,summary,a{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+button{font:inherit;cursor:pointer}
+a{color:var(--plum);text-decoration-thickness:1px;text-underline-offset:4px}
+a:focus-visible,summary:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:3px solid #795291;outline-offset:4px;border-radius:4px}
+::selection{background:#dfc8eb;color:var(--plum)}
+h1,h2,p,figure{margin:0}
+h1,h2{color:var(--plum);font-family:var(--serif);font-weight:400;letter-spacing:-.043em;line-height:1.08}
+h1 em,h2 em{font-weight:400;color:#78558a}
+h2{font-size:clamp(2.1rem,4.1vw,3.4rem)}
+p+p{margin-top:1em}
+em{font-family:var(--serif)}
+.hand,.signed,.farewell em{font:italic 1.28rem/1.45 var(--hand);color:var(--plum);letter-spacing:-.018em}
+.container{width:min(69rem,calc(100% - 2.6rem));margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.skip{position:absolute;left:16px;top:-100px;z-index:20;color:var(--plum);background:var(--paper);padding:10px 16px;box-shadow:0 3px 10px #48265320}.skip:focus{top:12px}
+.mast{position:relative;background:#fffaf7;border-bottom:1px solid #e5d9e3}
+.mast-inner{display:flex;align-items:center;justify-content:space-between;min-height:69px;gap:12px}
+.wordmark{min-height:44px;display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:italic 1.22rem var(--serif);letter-spacing:-.035em;white-space:nowrap}
+.wordmark svg{width:31px;height:31px;color:var(--violet)}
+.mast nav{display:flex;align-items:center;gap:10px;font-size:.86rem}
+.mast nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:#65506d}
+.mast nav a:hover{text-decoration:underline}
+.mast nav>span{color:#a890b2}
+.opening{background:radial-gradient(ellipse at 86% 29%,#eee4f67a 0%,transparent 54%),radial-gradient(ellipse at 10% 7%,#fbebe833,transparent 45%),var(--ivory);border-bottom:1px solid #e1d5df}
+.opening-grid{padding:40px 0 32px;display:grid;gap:26px;align-items:center}
+.opening-words,.room-wrap,.letter-margin,.sheet,.joy-slip,.hope,.notes-intro,.notes-list,.close-words,.closing-words{min-width:0}
+.dedication{font:italic 1.06rem/1.6 var(--serif);color:#725778;display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.dedication>span,.small-rule{display:block;width:29px;height:1px;background:var(--gold)}
+h1{font-size:clamp(3.45rem,13vw,4.5rem);line-height:1.01;margin-bottom:22px}
+h1 em{display:block}
+.opening-copy p{max-width:48ch;line-height:1.7}
+.opening-copy p+p{margin-top:11px}
+.opening-copy .immediate{color:var(--plum)}
+.first-promise{font:italic 1.275rem/1.45 var(--serif);color:var(--plum);padding:1px 0 1px 15px;border-left:2px solid #b49bc5;margin:22px 0 21px;max-width:38ch}
+.welcome-controls{display:flex;align-items:center;gap:5px 17px;flex-wrap:wrap}
+.button{display:inline-flex;justify-content:center;align-items:center;position:relative;cursor:pointer;min-height:48px;max-width:100%;padding:11px 18px;line-height:1.55;border-radius:30px;text-align:center;font-family:var(--body);font-size:.955rem;font-weight:550;border:1px solid transparent;text-decoration:none}
+.button.primary{color:#fffafc;background:linear-gradient(112deg,#715084,#684579);border-color:#6e4b7e;box-shadow:0 4px 12px #62417718}
+.button.primary:hover{background:#5e3e70;box-shadow:0 5px 13px #62417725}
+.button:active{transform:translateY(1px)}
+.letter-link{min-height:44px;display:inline-flex;align-items:center;gap:6px;font-size:.92rem}
+.letter-link svg{width:18px;height:18px;color:#79568a}
+.first-comfort{background:#f3eaf6d9;border:1px solid #ddcce5;border-radius:5px;max-width:46ch;padding:19px 22px;margin-top:20px;color:var(--plum)}
+.first-comfort p{font:1.13rem/1.55 var(--serif)}
+.first-comfort p+p{margin-top:9px}
+.first-comfort p:last-child{font-style:italic}
+.little-love{float:right;font:27px/1 var(--serif);color:#9069a1;margin-left:7px}
+.room-wrap{text-align:center;width:min(100%,33rem);margin:auto;position:relative}
+.room-art{width:100%;height:auto;overflow:visible}
+.room-caption{font-size:1.02rem;color:#715d70;margin-top:-2px}
+.eyeline{color:#705770;font-size:.79rem;line-height:1.4;font-weight:600;text-transform:uppercase;letter-spacing:.13em}
+.small-rule{margin:0 0 24px;width:36px}
+.letter-section{padding:42px 0 55px;background:radial-gradient(ellipse at 9% 24%,#eee2f177,transparent 47%),#f5eff4}
+.letter-layout{display:grid;gap:23px}
+.letter-margin{text-align:center}
+.margin-interior{display:flex;align-items:center;gap:13px;justify-content:center}
+.margin-interior .eyeline{display:none}
+.envelope-link{display:inline-flex;align-items:center;justify-content:center;gap:17px;padding:5px 8px;min-height:64px;text-decoration:none}
+.envelope-object{display:block;position:relative;width:88px;height:56px;perspective:550px;transform:rotate(-7deg);isolation:isolate;flex:none}
+.envelope-object i{display:block;position:absolute;font-style:normal}
+.env-base,.env-front,.env-flap{inset:0;border-radius:2px}
+.env-base{background:#e3d1dd;border:1px solid #c1adbc;box-shadow:2px 5px 8px #553b5314}
+.env-leaf{inset:4px 5px 6px;border:1px solid #d6bfcd;background:#fffdf5;transform:translateY(0);transition:transform .4s ease}
+.env-front{z-index:3;clip-path:polygon(0 0,50% 52%,100% 0,100% 100%,0 100%);background:linear-gradient(31deg,#f7eadb 51%,#fff6e8 51%);border:1px solid #cfbabc}
+.env-flap{z-index:4;clip-path:polygon(0 0,100% 0,52% 56%,48% 56%);background:linear-gradient(#fff8eb,#ead8d1);transform-origin:50% 0;transition:transform .45s,opacity .3s}
+.envelope-object .seal{z-index:5;inset:45% auto auto 43%;width:16%;height:24%;border-radius:48%;display:grid;place-items:center;background:#8b668f;color:#f7e4ee;font:11px/1 var(--serif);box-shadow:inset 0 0 0 1px #b38db7;transition:opacity .2s,transform .3s}
+.address{font:italic 1.14rem/1.45 var(--hand);color:#6e5176;text-align:left}
+.address em{font:normal .86rem/1.45 var(--body);display:block;letter-spacing:.01em;margin-top:2px}
+.envelope-link.open .env-flap{transform:rotateX(165deg);z-index:0}
+.envelope-link.open .env-leaf{transform:translateY(-22%)}
+.envelope-link.open .seal{opacity:0;transform:translateY(-8px)}
+.sheet{background:linear-gradient(108deg,#fffdf8 0,#fffaf1 80%,#fcf4ea);position:relative;border:1px solid #ded1cc;box-shadow:0 12px 35px #5638550a,4px 5px 0 -2px #f3e9e4,5px 6px 0 -2px #dbcecf;padding:30px 23px 36px;color:var(--ink);scroll-margin-top:12px}
+.sheet::before{position:absolute;content:'';inset:8px;border:1px solid #eadecf9c;background:radial-gradient(#92718510 .45px,transparent .8px) 0 0/9px 13px,radial-gradient(#9b80750b .5px,transparent .9px) 2px 3px/13px 11px;pointer-events:none}
+.sheet::after{content:'';position:absolute;bottom:-1px;right:-1px;width:27px;height:27px;background:linear-gradient(135deg,#ddcfcd 46%,#e4d7d2 49%,#f5eff4 51%);pointer-events:none}
+.letter-band{display:flex;align-items:center;gap:13px;width:111px;margin:0 0 18px;color:#9f87ac}
+.letter-band span{height:1px;flex:1;background:#d7c7d5}
+.letter-band svg{width:25px;height:25px}
+.sheet h2{max-width:16ch;font-size:clamp(2.1rem,7.8vw,3.25rem);margin-bottom:26px}
+.letter-text{max-width:59ch;line-height:1.82}
+.letter-text p+p{margin-top:1.05em}
+.salutation,.plain-love{color:var(--plum);font:italic 1.4rem/1.4 var(--serif)}
+.letter-text .signed{font-size:1.54rem;margin-top:26px}
+.garden-section{padding:55px 0 30px}
+.garden-layout{display:grid;gap:45px}
+.joy-slip{padding:28px 25px 30px;background:linear-gradient(122deg,#eee5f3,#f6eef6 62%,#f8f0f5);border:1px solid #dccbdf;position:relative;border-radius:4px 26px 4px 4px;box-shadow:2px 7px 17px #72456f08}
+.joy-slip::after{content:'';position:absolute;top:0;right:0;height:24px;width:24px;clip-path:polygon(0 0,100% 100%,0 100%);background:#dac6e4;border-radius:0 0 0 3px}
+.flower-label{display:flex;align-items:center;gap:5px;margin-bottom:9px;min-height:85px}
+.small-stem{width:74px;height:94px;transform:rotate(-16deg);flex-shrink:0}
+.flower-label .hand{font-size:1.03rem;transform:rotate(-4deg);color:#795c80}
+.joy-slip h2,.hope h2{font-size:clamp(2rem,6.8vw,2.75rem);margin-bottom:22px;max-width:22ch}
+.joy-copy,.hope-copy{line-height:1.77}
+.joy-last{margin-top:22px;padding-top:15px;border-top:1px solid #d8c5df;color:var(--plum);font:italic 1.32rem/1.4 var(--serif)}
+.hope{max-width:53ch;margin:auto}
+summary{display:block;list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+.plus{display:block;height:14px;width:14px;position:relative;color:#775c80;flex:none;margin-left:auto}
+.plus::before,.plus::after{content:'';position:absolute;top:6px;left:1px;width:12px;height:1.5px;background:currentColor}
+.plus::after{transform:rotate(90deg)}
+details[open]>summary .plus::after{transform:rotate(0)}
+.prayer{margin-top:24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.prayer summary{display:flex;align-items:center;gap:11px;min-height:56px;padding:10px 2px;color:var(--plum);font:1.18rem/1.4 var(--serif)}
+.prayer summary svg{width:23px;height:23px;color:var(--violet)}
+.prayer-inside{padding:8px 0 22px 12px;color:#59415c;font:1.11rem/1.7 var(--serif);border-left:1px solid #cfb9d9;margin:5px 8px 14px}
+.prayer-inside p+p{margin-top:.8em}
+.apology-section{padding:33px 0 55px}
+.apology-text{max-width:40rem;margin:auto;padding:33px 0 0;border-top:1px solid var(--line)}
+.apology-text h2{font-size:clamp(2rem,7vw,2.65rem);margin-bottom:23px}
+.apology-text p{line-height:1.8}
+.notes-section{background:linear-gradient(130deg,#ece1f2,#f2e9f5 54%,#eee5f1);border-block:1px solid #dccde2;padding:48px 0 54px}
+.notes-layout{display:grid;gap:26px}
+.notes-intro h2{max-width:15ch;margin-top:15px}
+.notes-list{display:grid;gap:12px;align-items:start}
+.little-note{position:relative;background:#fffaf4;border:1px solid #d8c5d5;border-radius:3px;box-shadow:1px 5px 12px #57335908}
+.little-note summary{display:flex;align-items:center;gap:14px;min-height:73px;padding:15px 19px;line-height:1.35;font:1.24rem/1.4 var(--serif);color:var(--plum)}
+.little-note .note-emblem{width:38px;height:38px;padding:6px;color:#80658d;background:#eee3f4;border:1px solid #dac4e3;border-radius:13px 13px 4px 4px;flex:none}
+.note-2 .note-emblem{background:#e8eaf3;color:#697b91;border-color:#c7cfdd}
+.note-3 .note-emblem{background:#f3e4ea;color:#926c84;border-color:#e1c7d6}
+.little-note summary>span{min-width:0}
+.little-note[open]{background:#fffcf7}
+.note-inside{margin:0 19px;padding:16px 2px 23px;border-top:1px solid #e4d8de}
+.note-inside p+p{margin-top:.8em}
+.embrace-art{width:149px;height:90px;margin:0 0 12px}
+.closeness{display:grid;gap:28px;padding-block:58px 48px;align-items:center}
+.close-words h2,.closing-words h2{margin-bottom:22px;max-width:16ch}
+.close-words{max-width:48ch}
+.frame-wrap,.closing-print-wrap{width:100%;min-width:0;text-align:center}
+.print{display:inline-block;width:min(80%,16.5rem);background:#fffcf6;padding:9px 9px 11px;border:1px solid #d9cbd0;box-shadow:1px 4px 6px #4a2b4e0b,4px 12px 25px #4a2b4e17;position:relative;margin:9px 0;transform:rotate(-2.5deg);vertical-align:middle}
+.print::before{content:'';position:absolute;z-index:3;top:-9px;left:calc(50% - 36px);width:72px;height:20px;transform:rotate(3deg);background:#d7c6e3b8;clip-path:polygon(1% 4%,100% 0,97% 18%,100% 44%,97% 65%,99% 95%,0 100%,2% 77%,0 59%,2% 32%);pointer-events:none}
+.photo-link{display:block;position:relative;color:var(--plum);text-decoration:none;cursor:zoom-in}
+.mat{display:grid;aspect-ratio:3/4;position:relative;background:#f3eaf4;isolation:isolate}
+.mat>img,.floral-mat{grid-area:1/1;align-self:center;justify-self:center}
+.mat>img{position:relative;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;z-index:1}
+.floral-mat{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:14px;align-self:stretch;justify-self:stretch;padding:15px;background:linear-gradient(145deg,#e9dff0,#faf3f0);text-align:center}
+.floral-mat>span{font:italic 1.1rem/1.45 var(--serif);color:#705375}
+.fallback-flower{width:99px;height:120px;margin-inline:auto}
+.zoom-glyph{width:30px;height:30px;padding:7px;position:absolute;z-index:2;bottom:8px;right:8px;background:#fffcf5ed;border-radius:50%;box-shadow:0 0 0 1px #48265312}
+.zoom-glyph svg{width:100%;height:100%}
+.print figcaption{font:italic 1.04rem/1.43 var(--hand);color:#614969;text-align:center;padding:13px 5px 1px}
+.poem-wrap{padding:16px 0 55px}
+.poem-card{display:grid;position:relative;border-block:1px solid #d6c5d6;gap:20px;padding:31px 5px 34px;background:radial-gradient(ellipse at 0 0,#f1e7ef77,transparent 68%)}
+.poem-heading{position:relative}
+.poem-heading h2{max-width:11ch;margin-top:16px;font-size:clamp(2.25rem,8vw,3.5rem)}
+.poem-leaves{position:absolute;width:73px;height:99px;right:0;top:0;opacity:.78;pointer-events:none}
+.verse{padding:1px 0 1px 15px;border-left:1px solid #c9acd6;font:1.17rem/1.69 var(--serif);color:var(--plum)}
+.verse p+p{margin-top:21px}
+.verse span{display:block}
+.closing{background:radial-gradient(ellipse at 14% 39%,#f9f0ef,transparent 61%),linear-gradient(117deg,#e8deed,#f1e6f2 76%,#eee0ea);border-top:1px solid #ddcde1;padding:43px 0 23px}
+.closing-grid{display:grid;gap:25px;align-items:center}
+.closing-print-wrap{grid-row:2}
+.hand-print{width:min(58%,13rem);transform:rotate(3deg)}
+.hand-print::before{transform:rotate(-7deg);background:#e2ccd6b0}
+.closing-words{max-width:49ch}
+.closing-words h2{max-width:14ch}
+.end-copy{line-height:1.75}
+.end-copy .plain-love{margin-block:16px 0}
+.last-fold{margin-top:22px}
+.last-fold>.button{width:fit-content}
+.last-answer{margin-top:15px;display:flex;align-items:center;gap:12px;border-left:2px solid #bb9bce;padding:11px 0 11px 13px}
+.last-answer p{font:1.12rem/1.5 var(--serif);color:var(--plum)}
+.last-answer p+p{margin-top:8px}
+.kept-heart{width:69px;height:auto;flex:none}
+.farewell{display:flex;flex-direction:column;align-items:start;gap:2px;margin-top:25px}
+.farewell>span{font:italic 1.06rem var(--serif);color:#755d7b}
+.farewell em{font-size:1.52rem}
+footer{display:flex;gap:15px;align-items:center;justify-content:center;padding:25px 22px 2px}
+footer>span{height:1px;width:35px;background:#c9b4ce;flex:0 1 35px}
+footer p{font:italic 1rem/1.55 var(--serif);text-align:center;color:#6e5574}
+dialog{padding:0;width:min(39rem,calc(100% - 24px));max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow:auto;overscroll-behavior:contain;background:var(--ivory);color:var(--ink);border:1px solid #cfbdd6;border-radius:8px;box-shadow:0 15px 85px #39203e40}
+dialog:not([open]){display:none}
+dialog::backdrop{background:#302233cb}
+.dialog-top{padding:8px 12px 8px 16px;position:sticky;z-index:4;top:0;background:#fff9f4f7;border-bottom:1px solid #e2d5df;display:flex;justify-content:space-between;align-items:center;gap:15px}
+.dialog-top h2{font-size:1.45rem}
+.dialog-top button{min-width:44px;width:44px;height:44px;display:grid;place-items:center;color:var(--plum);border:1px solid #d7c5dd;background:#f4eaf4;border-radius:50%}
+.dialog-top button svg{width:20px;height:20px}
+.dialog-inner{padding:15px 14px 14px;text-align:center}
+.dialog-photo{display:grid;place-items:center}
+#enlarged{display:block;width:auto;height:auto;max-width:100%;max-height:61vh;max-height:61dvh;margin:auto;object-fit:contain}
+#dialog-caption{font:italic 1.15rem/1.55 var(--serif);margin:12px 0 2px}
+#original,.quiet-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;color:var(--plum);font-size:.92rem}
+#loading,#missing{padding:20px 14px}
+#missing{background:#f3e9f5;border-radius:3px;width:100%}
+#missing p{margin:8px 0}
+.quiet-button{padding:8px 15px;border:1px solid #c6a8d6;border-radius:5px;background:#fffbf7}
+@media(min-width:44rem){
+ .container{width:min(69rem,calc(100% - 5rem))}
+ .mast-inner{min-height:75px}.wordmark{font-size:1.38rem}.wordmark svg{width:35px;height:35px}.mast nav{gap:17px;font-size:.94rem}
+ .opening-grid{grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:clamp(24px,4vw,75px);padding-block:65px 67px}
+ h1{font-size:clamp(3.5rem,6.4vw,5.55rem);margin-bottom:27px}
+ .room-wrap{width:100%}.room-caption{margin-top:1px;font-size:1.12rem}
+ .dedication{font-size:1.12rem;margin-bottom:20px}
+ .first-promise{font-size:1.35rem;margin-block:22px 24px}
+ .opening-copy{max-width:45ch}.opening-copy p+p{margin-top:12px}
+ .letter-section{padding:66px 0 77px}
+ .letter-layout{grid-template-columns:minmax(140px,.59fr) minmax(0,1.9fr);align-items:start;gap:clamp(18px,5vw,82px);max-width:64rem}
+ .letter-margin{padding-top:76px}.margin-interior{display:block}.margin-interior .eyeline{display:block}
+ .envelope-link{display:flex;flex-direction:column;gap:20px;padding:72px 4px 8px}
+ .envelope-object{width:min(100%,174px);height:auto;aspect-ratio:1.58}
+ .envelope-object .seal{font-size:16px}
+ .address{text-align:center;font-size:1.4rem}.address em{font-size:.89rem;margin-top:5px}
+ .sheet{padding:clamp(2.4rem,4.3vw,4rem)}.sheet::before{inset:13px}.sheet::after{width:38px;height:38px}
+ .sheet h2{margin-bottom:32px}.letter-band{width:140px;margin-bottom:24px}.letter-band svg{width:30px;height:30px}
+ .garden-section{padding:77px 0 34px}.garden-layout{grid-template-columns:1fr 1fr;align-items:center;gap:clamp(35px,7vw,97px);max-width:63rem}
+ .joy-slip{padding:26px clamp(24px,3vw,40px) 34px}.flower-label{margin-bottom:12px}
+ .hope h2,.joy-slip h2{font-size:clamp(2.05rem,3.5vw,2.85rem)}
+ .apology-section{padding:40px 0 76px}.apology-text{padding-top:38px}
+ .notes-section{padding-block:66px}.notes-layout{grid-template-columns:.95fr 1.2fr;align-items:start;gap:clamp(35px,6.5vw,96px);max-width:63rem}
+ .notes-intro{padding-top:22px}.notes-intro h2{font-size:clamp(2.4rem,3.8vw,3.25rem);max-width:13ch}
+ .little-note summary{min-height:77px;padding-inline:23px;font-size:1.35rem}
+ .note-inside{margin:0 24px;padding-bottom:26px}
+ .closeness{grid-template-columns:1.25fr 1fr;gap:65px;max-width:57rem;padding-block:80px 66px}
+ .frame-wrap .print{width:min(100%,17.5rem)}
+ .poem-wrap{max-width:59rem;padding-block:11px 79px}
+ .poem-card{grid-template-columns:.95fr 1.05fr;align-items:center;gap:36px;padding:43px 5% 45px}
+ .poem-heading{min-height:214px}.poem-leaves{width:110px;height:120px;left:2px;top:95px;right:auto}
+ .verse{font-size:1.23rem;padding-left:25px}
+ .closing{padding:69px 0 29px}.closing-grid{grid-template-columns:.95fr 1.05fr;max-width:61rem;gap:55px}
+ .closing-print-wrap{grid-column:1;grid-row:1}.closing-words{grid-column:2;grid-row:1}.hand-print{width:min(86%,16rem)}.closing-words .small-rule{margin-bottom:26px}
+ footer{padding:46px 24px 0}
+}
+@media(min-width:65rem){
+ .opening-grid{padding-block:76px 77px;grid-template-columns:1.04fr 1fr;gap:54px}
+ .opening-copy{font-size:1.09rem;line-height:1.8}
+ .room-wrap{max-width:33rem}
+ .letter-text{font-size:1.1rem}
+ .button{padding-inline:22px}.welcome-controls{gap:22px}
+ .sheet h2{max-width:19ch}
+ .joy-slip{padding:30px 37px 37px}
+}
+@media(max-width:23.75rem){
+ .container{width:calc(100% - 2.1rem)}
+ .mast nav{gap:7px}.wordmark{gap:5px;font-size:1.14rem}
+ .welcome-controls{gap:1px 12px}.button{font-size:.91rem;padding-inline:14px}.letter-link{font-size:.875rem}
+ .first-promise{font-size:1.18rem}
+ .sheet{padding-inline:21px}.notes-list summary{padding-inline:15px;gap:12px}
+ .poem-leaves{width:61px;right:-1px}.verse{padding-left:13px}
+ .closing-grid{gap:23px}footer{gap:8px}footer>span{flex-basis:15px}
+}
+@media(prefers-reduced-motion:no-preference){
+ html{scroll-behavior:smooth}
+ .room-blooms{transform-origin:248px 302px;animation:settling-flower 1.5s ease-out 1}
+ .first-comfort.just-opened,.little-note[open] .note-inside,.prayer[open] .prayer-inside,.last-fold[open] .last-answer{animation:unfold .28s ease-out 1}
+ .note-3[open] .embrace-a{animation:lean-a .62s ease-out 1}.note-3[open] .embrace-b{animation:lean-b .62s ease-out 1}
+ .last-fold[open] .tuck{animation:tuck .58s ease-out 1}
+ .button{transition:background .18s,box-shadow .18s}.plus::after{transition:transform .2s}
+ @keyframes settling-flower{0%{transform:rotate(-1.6deg)}65%{transform:rotate(.38deg)}100%{transform:rotate(0)}}
+ @keyframes unfold{from{transform:translateY(-4px) rotateX(4deg);opacity:.7}to{transform:none;opacity:1}}
+ @keyframes lean-a{from{transform:translateX(-11px)}to{transform:none}}@keyframes lean-b{from{transform:translateX(11px)}to{transform:none}}
+ @keyframes tuck{0%{transform:translateY(-7px)}70%{transform:translateY(1px)}100%{transform:none}}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .button:active{transform:none}
+}
+@media print{body{font-size:12pt}.mast,.skip,.welcome-controls,.zoom-glyph,.letter-margin,dialog,.last-fold>summary{display:none!important}.container{width:100%;max-width:100%}.opening-grid,.garden-layout,.notes-layout,.letter-layout,.closeness,.closing-grid{display:block}.room-wrap,.closing-print-wrap,.frame-wrap{max-width:150px;margin:14px auto}.sheet,.print,.little-note,.joy-slip{box-shadow:none}#first-comfort[hidden]{display:block!important}details::details-content{display:block!important;content-visibility:visible!important}.letter-section,.apology-section,.notes-section,.closing,.closeness,.poem-wrap,.garden-section{padding-block:20px}.sheet{padding:22px}.poem-card,.print,figure,.little-note{break-inside:avoid}.envelope-object{transform:none}}
+
+</style></head><body>
+<a href="#letter" class="skip jump-letter">Skip to your letter</a>
+<svg xmlns="http://www.w3.org/2000/svg" class="definitions" aria-hidden="true" focusable="false"><defs>
+  <linearGradient id="sky" x2=".8" y2="1"><stop stop-color="#c8c9df"/><stop offset=".60" stop-color="#f6dddd"/><stop offset="1" stop-color="#fff0cd"/></linearGradient>
+  <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5e9e8"/><stop offset="1" stop-color="#ddcfe6"/></linearGradient>
+  <linearGradient id="linen" x2=".9" y2=".8"><stop stop-color="#e5d8ef"/><stop offset=".55" stop-color="#c6b0d7"/><stop offset="1" stop-color="#ad95be"/></linearGradient>
+  <linearGradient id="glass" x1="0" x2="1" y2=".12"><stop stop-color="#b2b7bf" stop-opacity=".75"/><stop offset=".26" stop-color="#faf8eb" stop-opacity=".88"/><stop offset=".55" stop-color="#dedbe7" stop-opacity=".72"/><stop offset="1" stop-color="#a6a4ba" stop-opacity=".80"/></linearGradient>
+  <linearGradient id="blossom-shade" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#fff" stop-opacity=".42"/><stop offset=".76" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#6c477b" stop-opacity=".15"/></linearGradient>
+  <pattern id="weave" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0 1h7M0 4.5h7M1 0v7M4.5 0v7" fill="none" stroke="#fff7fb" stroke-opacity=".42" stroke-width=".6"/></pattern>
+  <g id="floret"><g fill="currentColor" stroke="#705e83" stroke-opacity=".23" stroke-width=".6">
+  <path d="M0 0C-4-4-14-5-13-11C-13-19-5-16-2-13C2-13 4-7 0 0Z"/>
+  <path d="M0 0C1-6 3-15 11-16C16-17 18-11 15-8C15-4 9-2 0 0Z"/>
+  <path d="M0 0C7-2 14 1 15 7C16 12 10 17 6 14C1 13 1 5 0 0Z"/>
+  <path d="M0 0C0 5-1 13-6 15C-13 18-16 12-14 8C-14 4-7 1 0 0Z"/></g>
+  <path d="M-12-12Q-5-14-1-1Q1-11 10-14Q5-8 1-1Q10 0 13 6Q7 3 0 1Q-1 10-8 13Q-4 7-1 0Z" fill="url(#blossom-shade)"/>
+  <path d="M-9-11-1 0 9-10M-9 9 0 1 9 10" fill="none" stroke="#fff5ed" stroke-width=".75" opacity=".5"/>
+  <circle r="2" fill="#d9ba83"/><circle r=".9" cx="-.4" cy="-.6" fill="#faf0c6"/></g>
+  <g id="leaf"><path d="M0 0Q-7-13-17-19L-17-22-22-23-24-28-29-29-31-34-36-35-41-43Q-43-49-47-56Q-32-55-24-50L-20-50-16-45-12-44-10-39-5-37-5-32 0-29Q4-17 0 0Z" fill="currentColor" stroke="#65766b" stroke-width=".9"/>
+  <g stroke="#e8eadc" opacity=".75" stroke-linecap="round" fill="none"><path d="M-.5-1Q-14-28-43-52" stroke-width="1.15"/><path d="M-6-13-4-25M-12-23-11-37M-20-32-22-44M-8-16-17-19M-16-28-28-31M-28-40-35-41" stroke-width=".8"/></g></g>
+  <g id="sprig"><g fill="none" stroke="#81907d" stroke-width="2" stroke-linecap="round"><path d="M5 113Q-1 77-6 25T-5-2"/></g>
+  <use href="#leaf" transform="translate(0 80) rotate(-8) scale(.74)" style="color:#899788"/><use href="#leaf" transform="translate(-3 59) rotate(86) scale(.71)" style="color:#a3ab96"/>
+  <use href="#head-purple" transform="translate(-5 10) scale(.9)"/></g>
+  <symbol id="mark" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M17 34Q22 27 23 17M18 31Q10 31 8 23Q16 23 18 31ZM21 25Q28 25 31 18Q24 19 21 25Z"/>
+  <path d="M22 16C15 16 11 12 14 8C17 5 21 9 22 13C18 7 20 3 24 3C28 3 27 10 24 13C28 8 33 8 34 12C35 16 29 17 25 16C29 19 28 24 25 24C22 24 21 20 22 16Z"/></g><circle cx="23" cy="15" r="1.6" fill="currentColor"/></symbol>
+  <symbol id="envelope-mark" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="2.2"/><path d="m3.5 7 8.5 6.4L20.5 7"/></g></symbol>
+  <symbol id="expand-mark" viewBox="0 0 24 24"><path d="M4 10V4h6m4 0h6v6m0 4v6h-6m-4 0H4v-6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <g id="fold-heart"><path d="M0 19C-11 12-31-1-26-15C-20-29-5-24 0-14C7-30 23-26 28-14C33 1 10 14 0 19Z" fill="currentColor"/><path d="M0-14 0 19Q26 2 28-12Q16-19 0-14Z" fill="#fcf1fd" opacity=".27"/><path d="M0-12V17" stroke="#fff6fb" stroke-width=".8" opacity=".55"/></g>
+  <g id="head-purple"><use href="#floret" transform="translate(-1.7 -35.2) rotate(31) scale(0.91)" style="color:#b59ac8"/><use href="#floret" transform="translate(-15.0 -34.7) rotate(-26) scale(0.92)" style="color:#c8a9d9"/><use href="#floret" transform="translate(18.1 -31.3) rotate(24) scale(0.71)" style="color:#b59ac8"/><use href="#floret" transform="translate(-32.8 -26.6) rotate(-38) scale(0.94)" style="color:#b59ac8"/><use href="#floret" transform="translate(12.0 -25.6) rotate(9) scale(0.97)" style="color:#8772a8"/><use href="#floret" transform="translate(29.1 -23.3) rotate(40) scale(0.70)" style="color:#b59ac8"/><use href="#floret" transform="translate(-7.6 -22.1) rotate(17) scale(0.94)" style="color:#b59ac8"/><use href="#floret" transform="translate(-21.9 -17.3) rotate(15) scale(1.09)" style="color:#b59ac8"/><use href="#floret" transform="translate(11.6 -11.5) rotate(-40) scale(1.08)" style="color:#8772a8"/><use href="#floret" transform="translate(26.7 -11.1) rotate(26) scale(1.03)" style="color:#8772a8"/><use href="#floret" transform="translate(-5.8 -11.0) rotate(21) scale(1.01)" style="color:#9e85b8"/><use href="#floret" transform="translate(-37.1 -10.5) rotate(-38) scale(0.67)" style="color:#a88bbf"/><use href="#floret" transform="translate(39.6 -9.4) rotate(-31) scale(0.92)" style="color:#b59ac8"/><use href="#floret" transform="translate(-27.3 -5.7) rotate(38) scale(1.05)" style="color:#8772a8"/><use href="#floret" transform="translate(17.2 -3.2) rotate(-20) scale(1.04)" style="color:#d4bee1"/><use href="#floret" transform="translate(-15.3 -2.3) rotate(-28) scale(0.89)" style="color:#b59ac8"/><use href="#floret" transform="translate(25.2 -1.6) rotate(2) scale(1.14)" style="color:#b59ac8"/><use href="#floret" transform="translate(-42.4 0.9) rotate(17) scale(0.87)" style="color:#c8a9d9"/><use href="#floret" transform="translate(-0.8 2.9) rotate(40) scale(1.04)" style="color:#8772a8"/><use href="#floret" transform="translate(41.3 3.0) rotate(8) scale(0.80)" style="color:#8772a8"/><use href="#floret" transform="translate(-27.1 4.6) rotate(-11) scale(1.13)" style="color:#9e85b8"/><use href="#floret" transform="translate(-11.8 6.7) rotate(33) scale(1.12)" style="color:#c8a9d9"/><use href="#floret" transform="translate(7.9 9.7) rotate(1) scale(1.03)" style="color:#b59ac8"/><use href="#floret" transform="translate(-1.2 14.1) rotate(-33) scale(0.95)" style="color:#a88bbf"/><use href="#floret" transform="translate(26.9 14.6) rotate(0) scale(0.94)" style="color:#8772a8"/><use href="#floret" transform="translate(-37.7 15.6) rotate(32) scale(0.67)" style="color:#b59ac8"/><use href="#floret" transform="translate(39.1 16.0) rotate(-20) scale(0.88)" style="color:#a88bbf"/><use href="#floret" transform="translate(-17.8 21.2) rotate(24) scale(0.99)" style="color:#8772a8"/><use href="#floret" transform="translate(14.4 25.3) rotate(-4) scale(1.06)" style="color:#8772a8"/><use href="#floret" transform="translate(-7.6 27.1) rotate(-20) scale(1.12)" style="color:#c8a9d9"/><use href="#floret" transform="translate(-28.4 29.9) rotate(-11) scale(0.81)" style="color:#9e85b8"/><use href="#floret" transform="translate(19.2 31.5) rotate(7) scale(0.86)" style="color:#a88bbf"/><use href="#floret" transform="translate(3.8 34.3) rotate(10) scale(0.76)" style="color:#b59ac8"/><use href="#floret" transform="translate(-11.9 36.5) rotate(5) scale(0.71)" style="color:#b59ac8"/></g><g id="head-blue"><use href="#floret" transform="translate(-17.4 -34.7) rotate(18) scale(0.74)" style="color:#c1c6e3"/><use href="#floret" transform="translate(-1.5 -33.8) rotate(-39) scale(0.88)" style="color:#c1c6e3"/><use href="#floret" transform="translate(21.6 -31.3) rotate(20) scale(0.93)" style="color:#ccd2e7"/><use href="#floret" transform="translate(-4.3 -26.2) rotate(-15) scale(0.87)" style="color:#c1c6e3"/><use href="#floret" transform="translate(-26.1 -22.6) rotate(26) scale(0.90)" style="color:#aebcda"/><use href="#floret" transform="translate(34.8 -22.5) rotate(23) scale(0.84)" style="color:#ccd2e7"/><use href="#floret" transform="translate(12.9 -20.2) rotate(-27) scale(1.00)" style="color:#98a9cc"/><use href="#floret" transform="translate(-21.2 -19.5) rotate(19) scale(0.86)" style="color:#ccd2e7"/><use href="#floret" transform="translate(-5.0 -14.6) rotate(40) scale(1.01)" style="color:#ccd2e7"/><use href="#floret" transform="translate(20.4 -12.8) rotate(18) scale(0.93)" style="color:#c1c6e3"/><use href="#floret" transform="translate(36.7 -11.4) rotate(11) scale(0.72)" style="color:#aebcda"/><use href="#floret" transform="translate(5.2 -9.9) rotate(-30) scale(0.87)" style="color:#c1c6e3"/><use href="#floret" transform="translate(-38.2 -9.7) rotate(-35) scale(0.74)" style="color:#aebcda"/><use href="#floret" transform="translate(-30.8 -6.8) rotate(-27) scale(1.12)" style="color:#ccd2e7"/><use href="#floret" transform="translate(-12.1 -6.2) rotate(-14) scale(1.04)" style="color:#a5a3cf"/><use href="#floret" transform="translate(16.8 -3.8) rotate(-19) scale(0.95)" style="color:#7f97b9"/><use href="#floret" transform="translate(25.1 -0.7) rotate(-24) scale(0.89)" style="color:#c1c6e3"/><use href="#floret" transform="translate(-0.4 1.3) rotate(-12) scale(1.03)" style="color:#aebcda"/><use href="#floret" transform="translate(37.8 2.5) rotate(37) scale(0.85)" style="color:#aebcda"/><use href="#floret" transform="translate(-43.9 3.8) rotate(14) scale(0.76)" style="color:#a5a3cf"/><use href="#floret" transform="translate(-14.5 5.4) rotate(-31) scale(0.89)" style="color:#aebcda"/><use href="#floret" transform="translate(-29.6 7.9) rotate(-18) scale(0.92)" style="color:#a5a3cf"/><use href="#floret" transform="translate(12.0 8.9) rotate(-12) scale(0.96)" style="color:#98a9cc"/><use href="#floret" transform="translate(0.8 11.1) rotate(-38) scale(0.97)" style="color:#c1c6e3"/><use href="#floret" transform="translate(23.1 11.8) rotate(23) scale(0.90)" style="color:#98a9cc"/><use href="#floret" transform="translate(-36.3 14.9) rotate(-1) scale(0.72)" style="color:#aebcda"/><use href="#floret" transform="translate(-19.1 16.2) rotate(-34) scale(1.09)" style="color:#c1c6e3"/><use href="#floret" transform="translate(34.3 18.8) rotate(17) scale(0.78)" style="color:#7f97b9"/><use href="#floret" transform="translate(11.5 23.7) rotate(-31) scale(1.09)" style="color:#98a9cc"/><use href="#floret" transform="translate(-5.4 26.0) rotate(-9) scale(1.01)" style="color:#7f97b9"/><use href="#floret" transform="translate(-23.8 28.3) rotate(18) scale(0.66)" style="color:#a5a3cf"/><use href="#floret" transform="translate(22.4 30.2) rotate(-12) scale(0.73)" style="color:#7f97b9"/><use href="#floret" transform="translate(-14.5 32.2) rotate(-38) scale(0.84)" style="color:#98a9cc"/><use href="#floret" transform="translate(5.2 36.4) rotate(37) scale(0.86)" style="color:#aebcda"/></g><g id="head-pink"><use href="#floret" transform="translate(5.6 -35.7) rotate(11) scale(0.89)" style="color:#cc9eb8"/><use href="#floret" transform="translate(15.8 -33.0) rotate(6) scale(0.73)" style="color:#b48aaf"/><use href="#floret" transform="translate(-15.8 -32.2) rotate(5) scale(0.93)" style="color:#b48aaf"/><use href="#floret" transform="translate(-28.4 -25.1) rotate(3) scale(0.81)" style="color:#b48aaf"/><use href="#floret" transform="translate(-1.3 -24.5) rotate(0) scale(1.08)" style="color:#d6acc7"/><use href="#floret" transform="translate(30.6 -20.5) rotate(37) scale(0.71)" style="color:#debbd0"/><use href="#floret" transform="translate(8.0 -20.2) rotate(-1) scale(0.88)" style="color:#d6acc7"/><use href="#floret" transform="translate(-14.4 -16.1) rotate(-13) scale(1.05)" style="color:#b48aaf"/><use href="#floret" transform="translate(24.8 -14.1) rotate(-30) scale(0.87)" style="color:#debbd0"/><use href="#floret" transform="translate(-3.9 -12.3) rotate(2) scale(0.87)" style="color:#debbd0"/><use href="#floret" transform="translate(-39.2 -10.2) rotate(36) scale(0.85)" style="color:#cc9eb8"/><use href="#floret" transform="translate(5.7 -8.0) rotate(0) scale(0.92)" style="color:#d6acc7"/><use href="#floret" transform="translate(40.8 -6.8) rotate(-1) scale(0.73)" style="color:#d6acc7"/><use href="#floret" transform="translate(-15.5 -6.5) rotate(-37) scale(0.96)" style="color:#e8c8d6"/><use href="#floret" transform="translate(-23.3 -4.1) rotate(-17) scale(1.09)" style="color:#cc9eb8"/><use href="#floret" transform="translate(29.1 -1.6) rotate(-7) scale(1.00)" style="color:#debbd0"/><use href="#floret" transform="translate(12.3 1.7) rotate(15) scale(0.91)" style="color:#d6acc7"/><use href="#floret" transform="translate(3.5 2.4) rotate(-18) scale(1.01)" style="color:#c2a0c6"/><use href="#floret" transform="translate(-44.9 3.3) rotate(12) scale(0.67)" style="color:#b48aaf"/><use href="#floret" transform="translate(40.1 4.3) rotate(34) scale(0.93)" style="color:#d6acc7"/><use href="#floret" transform="translate(9.9 7.0) rotate(-39) scale(0.88)" style="color:#cc9eb8"/><use href="#floret" transform="translate(-25.9 7.3) rotate(22) scale(0.89)" style="color:#e8c8d6"/><use href="#floret" transform="translate(-13.4 9.4) rotate(-11) scale(1.07)" style="color:#c2a0c6"/><use href="#floret" transform="translate(20.9 12.2) rotate(22) scale(1.06)" style="color:#debbd0"/><use href="#floret" transform="translate(-2.9 12.8) rotate(26) scale(1.01)" style="color:#e8c8d6"/><use href="#floret" transform="translate(-37.0 17.9) rotate(2) scale(0.86)" style="color:#debbd0"/><use href="#floret" transform="translate(10.4 20.0) rotate(-38) scale(1.14)" style="color:#c2a0c6"/><use href="#floret" transform="translate(-20.2 20.4) rotate(22) scale(1.06)" style="color:#b48aaf"/><use href="#floret" transform="translate(35.5 20.7) rotate(-3) scale(0.95)" style="color:#cc9eb8"/><use href="#floret" transform="translate(-2.0 24.6) rotate(-15) scale(0.87)" style="color:#d6acc7"/><use href="#floret" transform="translate(-29.7 29.2) rotate(-21) scale(0.92)" style="color:#e8c8d6"/><use href="#floret" transform="translate(25.2 30.5) rotate(-26) scale(0.86)" style="color:#b48aaf"/><use href="#floret" transform="translate(-9.5 35.0) rotate(-23) scale(0.87)" style="color:#debbd0"/><use href="#floret" transform="translate(4.8 36.4) rotate(24) scale(0.78)" style="color:#d6acc7"/></g></defs></svg>
+<header class="mast"><div class="mast-inner container"><a href="#welcome" class="wordmark" aria-label="A little comfort, back to the beginning"><svg class="" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#mark"/></svg><span>A little comfort</span></a><nav aria-label="Pages of your letter"><a href="#letter" class="jump-letter">Your letter</a><span aria-hidden="true">·</span><a href="#little-notes">Little notes</a></nav></div></header>
+<main>
+<section id="welcome" class="opening" aria-labelledby="welcome-title"><div class="container opening-grid">
+<div class="opening-words"><p class="dedication"><span aria-hidden="true"></span>For my Ma, with all my love.</p>
+<h1 id="welcome-title">You can be <em>soft here, Ma.</em></h1>
+<div class="opening-copy"><p>You don’t have to know exactly what you feel right now.</p>
+<p>You can be scared. You can be quiet. You can feel close to tears and still have none.</p>
+<p class="immediate">I love you, My Love. You can tell me as much or as little as you’re able to.</p></div>
+<p class="first-promise">You deserve care while you’re caring about everyone else.</p>
+<div class="welcome-controls"><button class="button primary" id="comfort-button" type="button" aria-controls="first-comfort" aria-expanded="false" hidden>A little comfort from Pa 💜</button><a href="#letter" class="letter-link jump-letter"><svg class="" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#envelope-mark"/></svg>Read your letter</a></div>
+<div class="first-comfort" id="first-comfort" role="region" aria-label="A little comfort from Pa"><span class="little-love" aria-hidden="true">♡</span><p>Come here, Ma.</p>
+<p>Imagine me holding your hand and pulling you close for a moment.</p>
+<p>You don’t have to find the right words.</p>
+<p>A long hug. A kiss on your forehead.</p>
+<p>I love you.</p></div></div>
+<div class="room-wrap"><svg class="room-art" viewBox="0 0 540 490" aria-hidden="true" focusable="false"><defs>
+    <clipPath id="room-border"><path d="M28 233C27 112 117 23 265 22C412 21 501 108 502 231L503 430Q500 455 478 456L54 456Q26 454 27 430Z"/></clipPath>
+    <clipPath id="glass-of-vase"><path d="M231 286Q250 292 267 286L268 304C288 327 295 356 289 380Q285 401 251 405Q214 404 210 387C202 364 211 328 230 305Z"/></clipPath>
+    </defs>
+    <g opacity=".52" fill="none" stroke="#ba9fc9" stroke-width=".9"><path d="M17 234C16 105 118 11 266 12C416 11 515 108 514 231"/><path d="M78 98l3-7 3 7 7 3-7 2-3 6-3-6-6-2Z" fill="#f9f2e8" stroke="#b7a277"/></g>
+    <g clip-path="url(#room-border)">
+      <rect x="20" y="15" width="492" height="450" fill="url(#wall)"/>
+      <path d="M67 329 77 103 137 29 388 13 413 80 415 330Z" fill="#f6eadb"/>
+      <path d="M95 315 98 39H395L395 317Z" fill="url(#sky)"/>
+      <ellipse cx="164" cy="124" rx="35" ry="34" fill="#fff3cf"/><ellipse cx="164" cy="124" rx="43" ry="42" fill="none" stroke="#fff6da" stroke-width="1.5" opacity=".75"/>
+      <g fill="#f9edf0" opacity=".78"><path d="M98 114q13-11 25-6q8-17 29-10q16-3 26 8q20-2 32 9Z"/><path d="M266 70q12-11 24-5q13-16 29-7q14-4 26 9q11-2 21 5Z"/></g>
+      <path d="M78 232Q133 199 174 208T251 198T331 189T409 175V325H78Z" fill="#cec4d8"/>
+      <path d="M77 257Q125 242 174 248T267 226T340 220T405 212V330H77Z" fill="#b0b5b5"/>
+      <path d="M78 277Q119 261 173 265T268 263T346 239T405 233V330H78Z" fill="#a6abaa"/>
+      <g fill="none" stroke="#f1dce3" stroke-width="3" opacity=".8"><path d="M302 242q22-17 29-41t10-54M326 216q-8-20-6-35M334 183q13-9 23-24M324 224q20-8 34-24"/></g>
+      <path d="M87 21H101L99 321H85ZM238 18H249L247 319H235ZM389 15H404L406 328H391Z" fill="#ecded0" stroke="#c8bcb8" stroke-width="1.2"/>
+      <path d="M83 152 403 150V161L84 164Z" fill="#f5e8d5" stroke="#c9beba" stroke-width="1.1"/>
+      <path d="M80 310 407 307 425 321 75 326Z" fill="#f6ebd9" stroke="#c6b8b7" stroke-width="1.4"/><path d="M77 326 424 321 421 327 79 334Z" fill="#d1bdbe"/>
+      <path d="M402 7 512 8V359Q484 349 461 359Q435 365 423 355Q448 278 441 225Q405 165 412 104Q414 64 402 7Z" fill="url(#linen)" stroke="#bda7ca" stroke-width="1.4"/>
+      <g stroke="#ad95be" opacity=".65" fill="none" stroke-width="1.25"><path d="M420 22Q427 70 424 108T442 190L451 217Q451 272 435 349"/><path d="M449 23Q459 84 446 131T457 208Q475 258 457 350"/><path d="M483 35Q485 80 468 134T467 200Q488 271 483 347"/></g>
+      <path d="M439 202Q459 211 489 201L491 208Q462 221 440 210Z" fill="#ba9ebf"/><path d="M470 211q11 21 7 33" fill="none" stroke="#a78bb2" stroke-width="1.4"/>
+      <path d="M16 357 416 321 532 354V467H18Z" fill="#eee0d7"/><path d="M17 376 439 336 516 355M20 420l322-31" stroke="#dfcac5" fill="none" stroke-width="1"/>
+      <path d="M59 354 144 345 245 455H133ZM178 343 257 336 375 456H289Z" fill="#fff5dd" opacity=".6"/>
+      <ellipse cx="241" cy="406" rx="83" ry="10" fill="#92708e" opacity=".15"/>
+      <path d="M319 354q64-17 91-17q48 11 91 11l19 28-6 65q-28 6-50 0q-61-8-102 3q-31 4-66-3q12-30-6-59q-10-17 29-28Z" fill="url(#linen)" stroke="#b59cc5" stroke-width="1.5"/>
+      <path d="M319 354q64-17 91-17q48 11 91 11l19 28-6 65q-28 6-50 0q-61-8-102 3q-31 4-66-3q12-30-6-59q-10-17 29-28Z" fill="url(#weave)"/>
+      <g fill="none" stroke="#aa8fbd" opacity=".7"><path d="M311 360q18 24 12 49t-4 25M331 355q24 16 21 41t5 42M388 347q8 17 28 39t16 48M426 349q28 8 47 40"/><path d="M303 432q29 7 62 1t75-1 56 0" stroke-width="3"/><path d="M304.0 443.0q-1 5-3 8" /><path d="M308.7 442.9q-1 5-3 8" /><path d="M313.4 442.9q-1 5-3 8" /><path d="M318.1 442.9q-1 5-3 8" /><path d="M322.8 442.8q-1 5-3 8" /><path d="M327.5 442.8q-1 5-3 8" /><path d="M332.2 442.7q-1 5-3 8" /><path d="M336.9 442.6q-1 5-3 8" /><path d="M341.6 442.6q-1 5-3 8" /><path d="M346.3 442.6q-1 5-3 8" /><path d="M351.0 442.5q-1 5-3 8" /><path d="M355.7 442.4q-1 5-3 8" /><path d="M360.4 442.4q-1 5-3 8" /><path d="M365.1 442.4q-1 5-3 8" /><path d="M369.8 442.3q-1 5-3 8" /><path d="M374.5 442.2q-1 5-3 8" /><path d="M379.2 442.2q-1 5-3 8" /><path d="M383.9 442.1q-1 5-3 8" /><path d="M388.6 442.1q-1 5-3 8" /><path d="M393.3 442.1q-1 5-3 8" /><path d="M398.0 442.0q-1 5-3 8" /><path d="M402.7 441.9q-1 5-3 8" /><path d="M407.4 441.9q-1 5-3 8" /><path d="M412.1 441.9q-1 5-3 8" /><path d="M416.8 441.8q-1 5-3 8" /><path d="M421.5 441.8q-1 5-3 8" /><path d="M426.2 441.7q-1 5-3 8" /><path d="M430.9 441.6q-1 5-3 8" /><path d="M435.6 441.6q-1 5-3 8" /><path d="M440.3 441.6q-1 5-3 8" /><path d="M445.0 441.5q-1 5-3 8" /><path d="M449.7 441.4q-1 5-3 8" /><path d="M454.4 441.4q-1 5-3 8" /><path d="M459.1 441.4q-1 5-3 8" /><path d="M463.8 441.3q-1 5-3 8" /></g>
+      <g class="room-blooms"><g fill="none" stroke="#738777" stroke-width="2.8" stroke-linecap="round"><path d="M246 377Q238 273 173 197M249 380Q231 263 248 155M255 374Q253 288 306 209M250 371Q242 267 221 209"/></g>
+      <use href="#leaf" transform="translate(244 294) rotate(-25) scale(0.95)" style="color:#91a089"/><use href="#leaf" transform="translate(263 281) rotate(105) scale(0.94)" style="color:#829889"/><use href="#leaf" transform="translate(237 263) rotate(-9) scale(0.75)" style="color:#99a68f"/><use href="#leaf" transform="translate(207 223) rotate(-32) scale(0.85)" style="color:#9aa88d"/><use href="#leaf" transform="translate(299 221) rotate(121) scale(0.78)" style="color:#a0ac98"/><use href="#leaf" transform="translate(173 211) rotate(-28) scale(0.64)" style="color:#829884"/><use href="#leaf" transform="translate(295 248) rotate(99) scale(0.92)" style="color:#81937f"/><use href="#leaf" transform="translate(230 232) rotate(-3) scale(0.73)" style="color:#a4ad96"/><use href="#head-pink" transform="translate(283 164) rotate(16) scale(.8)"/><use href="#head-purple" transform="translate(233 144) rotate(-9) scale(.97)"/>
+      <use href="#head-blue" transform="translate(174 187) rotate(12) scale(.95)"/><use href="#head-purple" transform="translate(245 207) rotate(-13) scale(1.03)"/><use href="#head-blue" transform="translate(303 209) rotate(13) scale(.70)"/></g>
+      <path d="M231 286Q250 292 267 286L268 304C288 327 295 356 289 380Q285 401 251 405Q214 404 210 387C202 364 211 328 230 305Z" fill="url(#glass)" stroke="#9694a5" stroke-width="1.4"/>
+      <g clip-path="url(#glass-of-vase)"><path d="M199 346q39-7 99-1v66H195Z" fill="#c1c1d2" opacity=".51"/>
+      <g fill="none" stroke="#8c978b" opacity=".65" stroke-width="2"><path d="M235 295q19 51 20 103M251 294q8 50 17 95M261 294q-24 57-30 101"/></g>
+      <g fill="none" stroke="#fff" opacity=".58" stroke-width="2"><path d="M212 309Q197.0 359 204.0 392" /><path d="M220 309Q207.0 359 213.0 392" /><path d="M228 309Q217.0 359 222.0 392" /><path d="M236 309Q227.0 359 231.0 392" /><path d="M244 309Q237.0 359 240.0 392" /><path d="M252 309Q247.0 359 249.0 392" /><path d="M260 309Q257.0 359 258.0 392" /><path d="M268 309Q267.0 359 267.0 392" /><path d="M276 309Q277.0 359 276.0 392" /><path d="M284 309Q287.0 359 285.0 392" /></g><path d="M209 348q35-7 81-2" fill="none" stroke="#f6f3ef" stroke-width="2"/></g>
+      <ellipse cx="249" cy="287" rx="20" ry="4.5" fill="#ccd0d5" fill-opacity=".8" stroke="#9796a5"/><path d="M230 291q21 4 39-1" fill="none" stroke="#eee7ed"/>
+      <g transform="translate(133 390) rotate(-12)"><path d="M-76-22 35-29 66 27-52 44Z" fill="#aa91a1" opacity=".16"/>
+      <path d="M-78-27 43-30 62 23-60 32Z" fill="#fcf2e2" stroke="#bba89f" stroke-width="1.4"/><path d="M-60 32-20-1 62 23" fill="#efdfcd" stroke="#d6c4b5"/>
+      <g class="drawn-flap"><path d="M-78-27 43-30 4 4Q0 9-6 6Z" fill="#fff8ea" stroke="#c6b3a7" stroke-width="1.2"/>
+      <ellipse cx="-2" cy="6" rx="9" ry="7.3" fill="#8f689f"/><path d="M-6 5q1-5 4-1q4-4 5 0q0 3-4 6q-4-2-5-5Z" fill="#dec6e2"/></g></g>
+      <g transform="translate(361 402) rotate(9) scale(.38)" style="color:#b398c7"><use href="#floret"/></g>
+    </g>
+    <path d="M28 233C27 112 117 23 265 22C412 21 501 108 502 231L503 430Q500 455 478 456L54 456Q26 454 27 430Z" stroke="#bba7bd" stroke-width="1.4" fill="none"/>
+    <g fill="none" stroke="#bcaa9e" opacity=".9"><path d="M65 467q97 6 183 3M290 470q77 3 179-4"/></g>
+    <g transform="translate(268 470) scale(.22)" style="color:#ab89be"><use href="#floret"/></g>
+    </svg><p class="room-caption hand">A quiet corner, just for you.</p></div></div></section>
+
+<section class="letter-section" aria-labelledby="letter-title"><div class="container letter-layout">
+<aside class="letter-margin"><div class="margin-interior"><p class="eyeline">From Pa, to you</p>
+<a class="envelope-link jump-letter" href="#letter" aria-label="Open your letter: For Ma. Open at your own pace.">
+<span class="envelope-object" aria-hidden="true"><i class="env-base"></i><i class="env-leaf"></i><i class="env-flap"></i><i class="env-front"></i><i class="seal">♡</i></span>
+<span class="address">For Ma. <em>Open at your own pace.</em></span></a></div></aside>
+<article id="letter" class="sheet" tabindex="-1"><div class="letter-band" aria-hidden="true"><span></span><svg class="" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#mark"/></svg><span></span></div>
+<h2 id="letter-title">There is room for <em>all of you,</em> My Love.</h2>
+<div class="letter-text"><p class="salutation">Ma,</p>
+<p>I wish I could sit beside you, take your hand, and let you rest against me for a while.</p>
+<p>There is so much around you right now, and you don’t have to turn it all into words before you can tell me about it.</p>
+<p>If you feel like crying, there is room for that. If the tears don’t come, you don’t have to force them. If you feel quiet inside and can’t explain why, you can tell me that, too.</p>
+<p>I know you’re scared about your dad and about what might be expected of you afterwards.</p>
+<p>You can be a nurse and still be a daughter who is frightened for her dad. You’re allowed to ask questions, need explanations, and ask other people to share the responsibility.</p>
+<p>And Ma, growing into something difficult can still leave room for your softness.</p>
+<p>There is room for the girl who laughs at silly things, teases me, wants a cuddle, and needs someone to look after her sometimes.</p>
+<p>You don’t have to bring that playful side forward before you feel ready. I love you in the quiet moments, too.</p>
+<p>I’m hoping with all my heart for your dad’s surgery to go smoothly and for his recovery to be steady. We can take the news as it comes, one step at a time.</p>
+<p>I want to make time to listen, understand what would help, and support you in the ways I can.</p>
+<p>For now, let this be one small thing you don’t have to question:</p>
+<p class="plain-love">I love you, Ma.</p>
+<p>You matter to me, and I want you to feel cared for through this.</p>
+<p class="signed">Your Asvineee 💜</p></div></article>
+</div></section>
+
+<div class="garden-section"><div class="container garden-layout">
+<section class="joy-slip" aria-labelledby="joy-title"><div class="flower-label"><svg class="small-stem" viewBox="-70 -42 140 165" aria-hidden="true" focusable="false"><use href="#sprig"/></svg><span class="hand">For you, Ma.</span></div><h2 id="joy-title">Growing can leave room <em>for your joy.</em></h2><div class="joy-copy"><p>You can learn how to handle something difficult and still laugh at something silly.</p>
+<p>You can help your dad and still want someone to hold your hand.</p>
+<p>You can take on responsibility and ask for help with it.</p>
+<p>You can have quiet days while keeping room in your life for the things that make you feel like yourself.</p>
+<p>Ma, there is room for all of that.</p></div><p class="joy-last">You get to receive care, too.</p></section>
+<section class="hope" aria-labelledby="hope-title"><span class="small-rule" aria-hidden="true"></span><h2 id="hope-title">For your dad, and for the daughter <em>who loves him.</em></h2><div class="hope-copy"><p>I’m hoping with all my heart for a smooth surgery and a steady recovery for your dad.</p>
+<p>When there are questions, it’s okay to ask his medical team to explain things clearly. When there are things to organise, it’s okay to ask other people to share them.</p>
+<p>You can love him deeply and still need support yourself, Ma.</p>
+<p>I want to be someone you can talk to through this.</p></div>
+<details class="prayer" id="prayer"><summary><svg class="" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#envelope-mark"/></svg><span>A little prayer for your dad.</span><i class="plus" aria-hidden="true"></i></summary><div class="prayer-inside"><p>God, please watch over her dad through his surgery and recovery.</p>
+<p>Guide the people caring for him with wisdom, care, and steady hands.</p>
+<p>Bring him healing, and give the family support through the waiting and the days ahead.</p>
+<p>Help Ma receive kindness, rest, and care herself.</p>
+<p>Amen.</p></div></details></section></div></div>
+
+<section class="apology-section container" aria-labelledby="apology-title"><div class="apology-text">
+<h2 id="apology-title">I’m sorry, Ma.</h2><div><p>I’m sorry for not following through on our plans to see each other, and for the ways my behaviour has left you feeling unimportant. I hear that it hurt.</p>
+<p>You deserve care you can feel. I want to make plans I can follow through on, communicate clearly when something changes, and give our time the attention it deserves.</p>
+<p>I love you, Ma, and I want to show up more thoughtfully.</p>
+<p>You don’t have to respond to this now. I wanted to acknowledge it and say I’m sorry.</p></div></div></section>
+
+<section class="notes-section" id="little-notes" aria-labelledby="notes-title"><div class="container notes-layout"><div class="notes-intro"><p class="eyeline">Three little notes</p>
+<h2 id="notes-title">Take whichever <em>little comfort</em> you need.</h2></div><div class="notes-list"><details class="little-note note-1" id="note-1"><summary><svg class="note-emblem" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><g stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" fill="none"><path d="M7 23q5-1 11-9t10-10M17 16Q8 18 7 10q6-1 10 6Zm5-6q0-7 6-8q2 6-6 8ZM12 22q8-1 10 3q-8 4-10-3Z"/></g></svg><span>I don’t have words.</span><i class="plus" aria-hidden="true"></i></summary><div class="note-inside"><p>Then you don’t have to find them right now, My Love.</p>
+<p>You can tell me, ‘I don’t know what I feel.’</p>
+<p>We can start there.</p>
+<p>You deserve tenderness even when you can’t explain what would help.</p></div></details><details class="little-note note-2" id="note-2"><summary><svg class="note-emblem" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><g stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" fill="none"><path d="M6 27V15a10 10 0 0 1 20 0v12ZM16 6v20M7 16h18M4 28h24"/><circle cx="20" cy="12" r="2"/></g></svg><span>I’m scared.</span><i class="plus" aria-hidden="true"></i></summary><div class="note-inside"><p>I hear you, Ma.</p>
+<p>This matters to you, and there is a lot you don’t know yet.</p>
+<p>We can take the next piece of news, the next question, and the next decision as they come.</p>
+<p>You’re allowed to ask for support along the way.</p></div></details><details class="little-note note-3" id="note-3"><summary><svg class="note-emblem" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><g stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" fill="none"><path d="M16 26Q3 17 6 11Q10 4 16 11Q23 3 27 11Q31 17 16 26Z"/><path d="M16 12v12" opacity=".5"/></g></svg><span>I just need a hug.</span><i class="plus" aria-hidden="true"></i></summary><div class="note-inside"><svg class="embrace-art" viewBox="0 0 188 112" aria-hidden="true" focusable="false">
+    <ellipse cx="94" cy="97" rx="61" ry="5" fill="#d9c8e3" opacity=".64"/>
+    <g class="embrace-a"><path d="M46 91q-3-27 17-39q12-4 25 5q14 12 16 32q-24 12-58 2Z" fill="#a98cbb" stroke="#856d9a" stroke-width="1.5"/>
+    <path d="M56 36q-5-15 8-16q8-1 9 8q11-5 20 2q11 9 5 23q-5 12-20 12q-20-1-21-17Z" fill="#c0a8d1" stroke="#9172a4" stroke-width="1.5"/>
+    <path d="M57 38q-12-3-8-12q4-7 12-2" fill="#c0a8d1" stroke="#9172a4" stroke-width="1.5"/>
+    <path d="M84 44q3 4 7 0" fill="none" stroke="#60486c" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="95" cy="49" rx="2.5" ry="1.8" fill="#795e80"/><circle cx="81" cy="51" r="3.6" fill="#d5acce"/></g>
+    <g class="embrace-b"><path d="M88 90q-1-23 16-36q12-5 27 1q18 10 17 37q-33 9-60-2Z" fill="#d7aec5" stroke="#b18ba5" stroke-width="1.5"/>
+    <path d="M94 33q-2-11 7-13q8-2 12 7q13-2 21 10q7 14-4 24q-9 9-22 4q-18-6-16-21Z" fill="#e8c6d4" stroke="#b18ba5" stroke-width="1.5"/>
+    <path d="M122 31q4-14 13-7q5 7-3 13" fill="#e8c6d4" stroke="#b18ba5" stroke-width="1.5"/>
+    <path d="M99 45q3 4 6 1" fill="none" stroke="#745266" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="93" cy="49" rx="2.5" ry="1.8" fill="#805d70"/><circle cx="109" cy="52" r="3.6" fill="#ddb0c1"/>
+    <path d="M113 67q-7 12-27 10" fill="none" stroke="#b18ba5" stroke-width="11" stroke-linecap="round"/><path d="M113 66q-7 12-27 10" fill="none" stroke="#e8c6d4" stroke-width="9" stroke-linecap="round"/></g>
+    <g class="embrace-a"><path d="M72 69q9 15 29 12" fill="none" stroke="#9172a4" stroke-width="11" stroke-linecap="round"/><path d="M72 68q9 15 29 12" fill="none" stroke="#c0a8d1" stroke-width="9" stroke-linecap="round"/></g>
+    <use href="#fold-heart" transform="translate(92 11) scale(.20)" style="color:#a47cba"/>
+    </svg><p>If I were beside you, I’d pull you close and let you rest for a while.</p>
+<p>A long hug.</p>
+<p>A kiss on your forehead.</p>
+<p>And a quiet reminder:</p>
+<p>I love you, My Love.</p></div></details></div></div></section>
+
+<section class="closeness container" aria-labelledby="close-title"><div class="close-words"><span class="small-rule" aria-hidden="true"></span>
+<h2 id="close-title">A little closeness, <em>until I can hold you again.</em></h2><div><p>I keep remembering how peaceful it felt being close to you.</p>
+<p>I want you to feel cared for with me, too.</p>
+<p>You can bring me your little stories, your worries, your quiet moments, and the parts you haven’t found words for yet.</p></div></div><div class="frame-wrap"><figure class="print hug-print">
+        <a class="photo-link" href="https://raw.githubusercontent.com/Cipher02/AVeryHardGoodBye/refs/heads/main/close%20hug%20only%20our%20face%20smirking%20a%20nd%20my%20head%20laying%20on%20hers%20.jpeg" data-photo target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="Open our close-hug photograph">
+          <span class="mat"><span class="floral-mat" aria-hidden="true"><svg class="fallback-flower" viewBox="-70 -42 140 165" aria-hidden="true" focusable="false"><use href="#sprig"/></svg><span>A little flower for you, Ma.</span></span><img src="https://raw.githubusercontent.com/Cipher02/AVeryHardGoodBye/refs/heads/main/close%20hug%20only%20our%20face%20smirking%20a%20nd%20my%20head%20laying%20on%20hers%20.jpeg" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="1920" height="2560" alt="Our faces close together, my head resting against yours as we smile."></span>
+          <span class="zoom-glyph" aria-hidden="true"><svg class="" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#expand-mark"/></svg></span>
+        </a><figcaption>I wish I could give you this hug right now.</figcaption></figure></div></section>
+
+<section class="poem-wrap container" aria-labelledby="poem-title"><div class="poem-card"><div class="poem-heading"><p class="eyeline">A poem from your Pa</p><h2 id="poem-title">Room <em>for You</em></h2>
+<svg class="poem-leaves" viewBox="0 0 166 140" aria-hidden="true"><g transform="translate(82 18) rotate(26) scale(.83)"><use href="#sprig"/></g></svg></div><div class="verse"><p><span>You can learn something difficult</span><span>and still laugh at something silly.</span></p>
+<p><span>You can care for your dad</span><span>and still reach for someone’s hand.</span></p>
+<p><span>There is room, My Love,</span><span>for the woman you are becoming</span><span>and the softness</span><span>you want to keep.</span></p></div></div></section>
+
+<section class="closing" aria-labelledby="end-title"><div class="container closing-grid"><div class="closing-words"><span class="small-rule" aria-hidden="true"></span>
+<h2 id="end-title">One moment <em>at a time, Ma.</em></h2><div class="end-copy"><p>You don’t have to work out every part of what comes next right now.</p>
+<p>I’m hoping for healing for your dad, support around your family, and moments when you can receive care yourself.</p>
+<p class="plain-love">I love you, My Love.</p>
+<p>I want to keep making that love clear in the way I treat you.</p></div>
+<details class="last-fold" id="kept-note"><summary class="button primary">Keep a little hug with me.</summary><div class="last-answer"><svg class="kept-heart" viewBox="0 0 135 95" aria-hidden="true"><g transform="rotate(-7 68 53)"><path d="M12 30 116 25 124 78 18 85Z" fill="#d7c2e5" stroke="#ae8dbf" stroke-width="1.4"/><g class="tuck"><use href="#fold-heart" transform="translate(70 39) scale(.92)" style="color:#9874b2"/></g><path d="m12 30 55 30 49-35 8 53-106 7Z" fill="#fffaef" stroke="#c5b3be" stroke-width="1.3"/><path d="m18 85 40-31m66 24L81 52" fill="none" stroke="#d7c6c8"/></g></svg><div><p>Yours to come back to.</p>
+<p>A hug from your Pa, and one more forehead kiss. 💜</p></div></div></details>
+<p class="farewell"><span>With love,</span><em>Your Asvineee</em></p></div><div class="closing-print-wrap"><figure class="print hand-print">
+        <a class="photo-link" href="https://raw.githubusercontent.com/Cipher02/AVeryHardGoodBye/refs/heads/main/just%20our%20hand%20holding%20.jpeg" data-photo target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="Open our hand-holding photograph">
+          <span class="mat"><span class="floral-mat" aria-hidden="true"><svg class="fallback-flower" viewBox="-70 -42 140 165" aria-hidden="true" focusable="false"><use href="#sprig"/></svg><span>A little flower for you, Ma.</span></span><img src="https://raw.githubusercontent.com/Cipher02/AVeryHardGoodBye/refs/heads/main/just%20our%20hand%20holding%20.jpeg" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="1920" height="2560" alt="Your hand resting in mine, our fingers curled together."></span>
+          <span class="zoom-glyph" aria-hidden="true"><svg class="" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#expand-mark"/></svg></span>
+        </a><figcaption>Your hand in mine.</figcaption></figure></div></div>
+<footer><span aria-hidden="true"></span><p>Read a little. Rest a little. Come back whenever you want.</p><span aria-hidden="true"></span></footer></section>
+</main>
+<dialog id="photo-dialog" aria-labelledby="photo-heading" aria-describedby="dialog-caption">
+<div class="dialog-top"><h2 id="photo-heading">A little closeness</h2><button type="button" id="close-photo" aria-label="Close photograph" autofocus><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 4 12 12M16 4 4 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button></div>
+<div class="dialog-inner"><div class="dialog-photo"><img id="enlarged" alt="" referrerpolicy="no-referrer" hidden><p id="loading" role="status" hidden>Opening the photograph…</p><div id="missing" hidden><svg class="fallback-flower" viewBox="-70 -42 140 165" aria-hidden="true" focusable="false"><use href="#sprig"/></svg><p>A little flower for you while the photograph is away.</p><button id="try-photo" type="button" class="quiet-button">Try the photograph again</button></div></div><p id="dialog-caption"></p><a id="original" href="#welcome" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Open original photograph<span class="sr-only"> in a new tab</span></a></div>
+</dialog><script>(() => {
+  'use strict';
+  const get = id => document.getElementById(id);
+  const comfort = get('first-comfort');
+  const toggle = get('comfort-button');
+  // Without script this little message is already on the paper.
+  toggle.addEventListener('click', () => {
+    const opening = comfort.hidden;
+    comfort.hidden = !opening;
+    toggle.setAttribute('aria-expanded', String(opening));
+    comfort.classList.toggle('just-opened', opening);
+  });
+  comfort.hidden = true;
+  toggle.hidden = false;
+
+  const envelope = document.querySelector('.envelope-link');
+  document.querySelectorAll('.jump-letter').forEach(link => {
+    link.addEventListener('click', event => {
+      if (event.defaultPrevented || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      envelope.classList.add('open');
+      // Native anchor navigation still sets the fragment and scrolls normally.
+      get('letter').focus({preventScroll:true});
+    });
+  });
+
+  const links = Array.from(document.querySelectorAll('a[data-photo]'));
+  for (const link of links) {
+    const image = link.querySelector('img');
+    const floral = link.querySelector('.floral-mat');
+    const label = link.getAttribute('aria-label');
+    const setMissing = missing => {
+      image.hidden = missing;
+      floral.setAttribute('aria-hidden', String(!missing));
+      link.classList.toggle('missing-photo', missing);
+      link.setAttribute('aria-label', missing ? 'Try opening the photograph: ' + image.alt : label);
+    };
+    image.addEventListener('error', () => setMissing(true));
+    image.addEventListener('load', () => setMissing(false));
+    if (image.complete && image.currentSrc) setMissing(!image.naturalWidth);
+  }
+
+  const dialog = get('photo-dialog');
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+  const close = get('close-photo');
+  const retry = get('try-photo');
+  const original = get('original');
+  const caption = get('dialog-caption');
+  const missing = get('missing');
+  const loading = get('loading');
+  let large = get('enlarged');
+  let opener = null;
+  // Use a fresh image per request so a late event cannot replace another photo.
+  function displayPhoto() {
+    if (!opener) return;
+    const img = opener.querySelector('img');
+    const next = document.createElement('img');
+    next.id = 'enlarged';
+    next.alt = img.alt;
+    next.hidden = true;
+    next.referrerPolicy = 'no-referrer';
+    large.replaceWith(next);
+    large = next;
+    missing.hidden = true;
+    loading.hidden = false;
+    const currentLink = opener;
+    next.addEventListener('load', () => {
+      if (next !== large || !dialog.open) return;
+      loading.hidden = true;
+      next.hidden = false;
+      // Recover a failed print when a retry of the original succeeds.
+      if (currentLink.classList.contains('missing-photo')) {
+        const originalImage = currentLink.querySelector('img');
+        originalImage.src = currentLink.href;
+      }
+    }, {once:true});
+    next.addEventListener('error', () => {
+      if (next !== large || !dialog.open) return;
+      loading.hidden = true;
+      missing.hidden = false;
+    }, {once:true});
+    next.src = currentLink.href;
+  }
+  function dismiss() { if (dialog.open) dialog.close(); }
+  for (const link of links) {
+    link.setAttribute('aria-haspopup','dialog');
+    link.setAttribute('aria-controls','photo-dialog');
+    link.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.defaultPrevented) return;
+      event.preventDefault();
+      if (dialog.open) return;
+      opener = link;
+      original.href = link.href;
+      caption.textContent = link.closest('figure').querySelector('figcaption').textContent;
+      dialog.showModal();
+      document.body.classList.add('lock-scroll');
+      close.focus({preventScroll:true});
+      displayPhoto();
+    });
+  }
+  retry.addEventListener('click', () => { close.focus({preventScroll:true}); displayPhoto(); });
+  close.addEventListener('click', dismiss);
+  dialog.addEventListener('cancel', event => { event.preventDefault(); dismiss(); });
+  dialog.addEventListener('close', () => {
+    document.body.classList.remove('lock-scroll');
+    if (opener && opener.isConnected) opener.focus({preventScroll:true});
+    opener = null;
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target !== dialog) return;
+    const r = dialog.getBoundingClientRect();
+    if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dismiss();
+  });
+  dialog.addEventListener('keydown', event => {
+    if (event.key !== 'Tab') return;
+    if (event.shiftKey && document.activeElement === close) {
+      event.preventDefault(); original.focus();
+    } else if (!event.shiftKey && document.activeElement === original) {
+      event.preventDefault(); close.focus();
+    }
+  });
+})();
+
+</script>
+</body></html>
